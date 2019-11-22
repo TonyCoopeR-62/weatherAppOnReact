@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  width: 500px;
+  height: 0;
+  font-family: 'Arial', sans-serif;
+  color: #2c2c2cd3;
+  margin: 15% auto auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.text {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 5px;
+  outline: none;
+}
+
+.button {
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.output {
+  display: grid;
+  grid-template-areas: 
+  "icon temper"
+  "city humidity";
+  border-radius: 8px;
+  box-shadow: 0 20px 40px 0 silver;
+  align-items: center;
+  padding: 20px;
+  justify-items: center;
+  background: linear-gradient(15deg, #ff626267, #6b2cff5b);
+  font-size: 30px;
+}
+
+.city-name {
+  grid-area: city;
+}
+
+.humidity {
+  grid-area: humidity;
+}
+
+.temper {
+  grid-area: temper;
+}
+
+.img-div {
+  grid-area: icon;
+}
